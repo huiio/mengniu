@@ -1,4 +1,4 @@
-# 一个逗比写的逗比脚本
+＃一个逗比写的逗比脚本辉改自用
 
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 [![GitHub stars](https://img.shields.io/github/stars/x5670/doubi.svg?style=popout&label=Stars)](https://github.com/x5670/doubi/stargazers)
