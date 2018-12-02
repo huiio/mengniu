@@ -6,7 +6,7 @@ export PATH
 #	System Required: Debian/Ubuntu
 #	Description: TCP-BBR
 #	Version: 1.0.22
-#	Author: Toyo
+#	Author: Toyo hui
 #	Blog: https://doub.io/wlzy-16/
 #=================================================
 
@@ -42,7 +42,7 @@ Set_latest_new_version(){
 	echo -e "请输入 要下载安装的Linux内核版本(BBR) ${Green_font_prefix}[ 格式: x.xx.xx ，例如: 4.9.96 ]${Font_color_suffix}
 ${Tip} 内核版本列表请去这里获取：${Green_font_prefix}[ http://kernel.ubuntu.com/~kernel-ppa/mainline/ ]${Font_color_suffix}
 建议使用${Green_font_prefix}稳定版本：4.9.XX ${Font_color_suffix}，4.9 以上版本属于测试版，稳定版与测试版同步更新，BBR 加速效果无区别。"
-	read -e -p "(直接回车，自动获取最新稳定版本):" latest_version
+	read -e -p "(直接回车，自动获取最新辉稳定版本):" latest_version
 	[[ -z "${latest_version}" ]] && get_latest_new_version
 	echo
 }
@@ -111,7 +111,7 @@ del_deb_over(){
 	update-grub
 	addsysctl
 	echo -e "${Tip} 重启VPS后，请运行脚本查看 BBR 是否正常加载，运行命令： ${Green_background_prefix} bash ${file}/bbr.sh status ${Font_color_suffix}"
-	read -e -p "需要重启VPS后，才能开启BBR，是否现在重启 ? [Y/n] :" yn
+	read -e -p "需要重启VPS后，才能开启BBR，是否现在重启辉 ? [Y/n] :" yn
 	[[ -z "${yn}" ]] && yn="y"
 	if [[ $yn == [Yy] ]]; then
 		echo -e "${Info} VPS 重启中..."
