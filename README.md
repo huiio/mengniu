@@ -300,6 +300,20 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/x5670/doubi/mas
 - 脚本说明: BBR 一键安装管理脚本
 - 系统支持: Debian6+ / Ubuntu14+
 - 使用方法: https://doub.io/wlzy-16/
+使用方法
+
+# 启动BBR
+bash bbr.sh start
+# 关闭BBR
+bash bbr.sh stop
+ # 查看BBR状态
+bash bbr.sh status
+
+注意：关闭BBR，需要重启VPS，所以脚本会提醒是否立即重启VPS。
+
+升级BBR
+
+bash bbr.sh
 
 #### 下载安装:
 ``` bash
